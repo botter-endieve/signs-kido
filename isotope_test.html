@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isotope Test</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.1/web-animations.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+  <script src="assets/js/muuri.js"></script>
+  <link href="isotope.css" rel="stylesheet">
+</head>
+<body>
+
+  <h1>Grid Layout by Muuri.js</h1>
+
+  <section class="grid-wrapper">
+    <div class="filter-controls">
+      <div class="control" style="display: none;">Search
+        <input class="search-field form-control" type="text" name="search" placeholder="Enter the fruit name">
+      </div>
+      <div class="control">Filter
+        <select class="filter-field form-control">
+          <option value="">ALL</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+        </select>
+      </div>
+      <div class="control" style="display: none;">Sort
+        <select class="sort-field form-control">
+          <option value="order">None</option>
+          <option value="title">Order by fruit name</option>
+          <option value="color">Order by color name</option>
+        </select>
+      </div>
+    </div>
+  
+    <div class="grid">
+      <div class="item blue w2 h2" data-color="blue" data-title="peach">
+        <div class="item-content">
+          <!-- Safe zone, enter your custom markup -->
+            <div class="custom-content">
+            Item 1<br />(peach)
+            </div>
+          <!-- Safe zone ends -->
+        </div>
+      </div>
+      <div class="item red w2" data-color="red" data-color="blue" data-title="orange">
+        <div class="item-content">
+          <div class="custom-content">
+            Item 2<br />(orange)
+          </div>
+        </div>
+      </div>
+      <div class="item green w2" data-color="green" data-color="blue" data-title="banana applpe">
+        <div class="item-content">
+          <div class="custom-content">
+            Item 3<br />(banana apple)
+          </div>
+        </div>
+      </div>
+      <div class="item red w2 h2" data-color="red" data-color="blue" data-title="grape orange">
+        <div class="item-content">
+          <div class="custom-content">
+            Item 4<br />(grape orange)
+          </div>
+        </div>
+      </div>
+      <div class="item red" data-color="red" data-color="blue" data-title="strawberry">
+        <div class="item-content">
+          <div class="custom-content">
+            Item 5<br />(strawberry)
+          </div>
+        </div>
+      </div>
+      <div class="item blue" data-color="blue" data-color="blue" data-title="cherry banana">
+        <div class="item-content">
+          <div class="custom-content">
+            Item 6<br />(cherry banana)
+          </div>
+        </div>
+      </div>
+      <div class="item red h2" data-color="red" data-color="blue" data-title="melon apple">
+        <div class="item-content">
+          <div class="custom-content">
+            Item 7<br />(melon apple)
+          </div>
+        </div>
+      </div>
+      <div class="item green h2" data-color="green" data-color="blue" data-title="kiwi">
+        <div class="item-content">
+          <div class="custom-content">
+            Item 8<br />(kiwi)
+          </div>
+        </div>
+      </div>
+      <div class="item green w2" data-color="green" data-color="blue" data-title="watermelon">
+        <div class="item-content">
+          <div class="custom-content">
+            Item 9<br />(watermelon)
+          </div>
+        </div>
+      </div>
+      <div class="item blue w2 h2" data-color="blue" data-color="blue" data-title="pineapple">
+        <div class="item-content">
+          <div class="custom-content">
+            Item 10<br />(pineapple)
+          </div>
+        </div>
+      </div>
+      <div class="item green" data-color="green" data-color="blue" data-title="blueberry">
+        <div class="item-content">
+          <div class="custom-content">
+            Item 11<br />(blueberry)
+          </div>
+        </div>
+      </div>
+      <div class="item red h2" data-color="red" data-color="blue" data-title="peach">
+        <div class="item-content">
+          <div class="custom-content">
+            Item 12<br />(peach)
+          </div>
+        </div>
+      </div>
+      <div class="item blue w2" data-color="blue" data-color="blue" data-title="lemon">
+        <div class="item-content">
+          <div class="custom-content">
+            Item 13<br />(lemon)
+          </div>
+        </div>
+      </div>
+      <div class="item blue w2" data-color="blue" data-color="blue" data-title="grapefruit">
+        <div class="item-content">
+          <div class="custom-content">
+            Item 14<br />(grapefruit)
+          </div>
+        </div>
+      </div>
+      <div class="item green" data-color="green" data-color="blue" data-title="guava">
+        <div class="item-content">
+          <div class="custom-content">
+            Item 15<br />(guava)
+          </div>
+        </div>
+      </div>
+      <div class="item red w2" data-color="red" data-color="blue" data-title="yellowstrawberry">
+        <div class="item-content">
+          <div class="custom-content">
+            Item 16<br />(yellowstrawberry)
+          </div>
+        </div>
+      </div>
+      <div class="item green" data-color="green" data-color="blue" data-title="avocado">
+        <div class="item-content">
+          <div class="custom-content">
+            Item 17<br />(avocado)
+          </div>
+        </div>
+      </div>
+      <div class="item green w2" data-color="green" data-color="blue" data-title="grape">
+        <div class="item-content">
+          <div class="custom-content">
+            Item 18<br />(grape)
+          </div>
+        </div>
+      </div>
+      <div class="item blue w2" data-color="blue" data-color="blue" data-title="peach banana">
+        <div class="item-content">
+          <div class="custom-content">
+            Item 19<br />(peach banana)
+          </div>
+        </div>
+      </div>
+      <div class="item blue" data-color="blue" data-color="blue" data-title="grape">
+        <div class="item-content">
+          <div class="custom-content">
+            Item 20<br />(grape)
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<script>
+ document.addEventListener('DOMContentLoaded', function () {
+  var grid = null,
+      wrapper = document.querySelector('.grid-wrapper'),
+      searchField = wrapper.querySelector('.search-field'),
+      filterField = wrapper.querySelector('.filter-field'),
+      sortField = wrapper.querySelector('.sort-field'),
+      gridElem = wrapper.querySelector('.grid'),
+      searchAttr = 'data-title',
+      filterAttr = 'data-color',
+      searchFieldValue,
+      filterFieldValue,
+      sortFieldValue,
+      dragOrder = [];
+
+  // Init the grid layout
+  grid = new Muuri(gridElem, {
+    dragEnabled: true
+  });
+  
+  // Set inital search query, active filter, active sort value and active layout.
+  searchFieldValue = searchField.value.toLowerCase();
+  filterFieldValue = filterField.value;
+  sortFieldValue = sortField.value;
+
+  // Search field event binding
+  searchField.addEventListener('keyup', function () {
+    var newSearch = searchField.value.toLowerCase();
+    if (searchFieldValue !== newSearch) {
+      searchFieldValue = newSearch;
+      filter();
+    }
+  });
+
+  // Filter field event binding
+  filterField.addEventListener('change', filter);
+  
+  // Sort field event binding
+  sortField.addEventListener('change', sort);
+
+  // Filtering
+  function filter() {
+    filterFieldValue = filterField.value;
+    grid.filter(function (item) {
+      var element = item.getElement(),
+          isSearchMatch = !searchFieldValue ? true : (element.getAttribute(searchAttr) || '').toLowerCase().indexOf(searchFieldValue) > -1,
+          isFilterMatch = !filterFieldValue ? true : (element.getAttribute(filterAttr) || '') === filterFieldValue;
+      return isSearchMatch && isFilterMatch;
+    });
+  }
+  
+  // Sorting
+  function sort() {
+    // Do nothing if sort value did not change.
+    var currentSort = sortField.value;
+    if (sortFieldValue === currentSort) {
+      return;
+    }
+
+    // If we are changing from "order" sorting to something else
+    // let's store the drag order.
+    if (sortFieldValue === 'order') {
+      dragOrder = grid.getItems();
+    }
+
+    // Sort the items.
+    grid.sort(
+      currentSort === 'title' ? compareItemTitle :
+      currentSort === 'color' ? compareItemColor :
+      dragOrder
+    );
+    sortFieldValue = currentSort;
+  }
+  
+  // Compare data-title
+  function compareItemTitle(a, b) {
+    var aVal = a.getElement().getAttribute(searchAttr) || '';
+    var bVal = b.getElement().getAttribute(searchAttr) || '';
+    return aVal < bVal ? -1 : aVal > bVal ? 1 : 0;
+
+  }
+
+  // Compare data-color
+  function compareItemColor(a, b) {
+    var aVal = a.getElement().getAttribute(filterAttr) || '';
+    var bVal = b.getElement().getAttribute(filterAttr) || '';
+    return aVal < bVal ? -1 : aVal > bVal ? 1 : compareItemTitle(a, b);
+  }
+});
+</script>
+  
+</body>
+</html>
